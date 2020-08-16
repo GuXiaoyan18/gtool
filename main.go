@@ -1,9 +1,24 @@
 package main
 
-import "myProject/gtool/smap"
+import (
+	"fmt"
+	"math/rand"
+
+	//"myProject/gtool/smap"
+)
 
 func main() {
-	smap := smap.NewSmap()
-	smap.Add("allen", 1)
-	smap.Remove("boy")
+	fmt.Println(rand.Int31n(100))
+	type Option struct {
+		num int
+	}
+	var op *Option
+	fmt.Println(op.num)
+
+	type kenshi struct {
+		int
+	}
+
+	var a *kenshi
+	fmt.Printf("%+v", a)
 }
